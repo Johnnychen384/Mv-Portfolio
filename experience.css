@@ -81,8 +81,6 @@ nav ul li:hover {
     }
 }
 
-
-
 main {
     display: flex;
     flex-direction: column;
