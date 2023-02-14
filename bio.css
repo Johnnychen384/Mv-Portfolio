@@ -9,7 +9,9 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: #3b444b;
+    /* background-color: #3b444b; */
+    background-image: url("./ameer-basheer-gV6taBJuBTk-unsplash.jpg");
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,7 +23,7 @@ body {
 nav {
     padding: 1em;
     height: 3%;
-    background-color: #0e1111;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
