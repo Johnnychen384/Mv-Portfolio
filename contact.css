@@ -77,7 +77,7 @@ main form h1 {
 main form {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 1em;
 }
 
 main form div i:first-child{
@@ -94,7 +94,7 @@ main form div {
     flex-direction: column;
     margin: 0 auto;
     width: 90%;
-    gap: .5em;
+    gap: .3em;
 }
 
 main form div label {
@@ -106,12 +106,21 @@ main form div input {
     padding: .7em 0;
     font-size: .9em;
     color: black;
+    border-radius: .2em;
 }
+
 
 main form div textarea {
     padding: .7em .5em;
     font-size: .9em;
     color: black;
+    border-radius: .2em;
+}
+
+main form div span {
+    color: red;
+    font-size: .4em;
+    display: none;
 }
 
 #send {
@@ -123,6 +132,9 @@ main form div textarea {
     border: none;
 }
 
+.incomplete {
+    border: .15em solid red;
+}
 
 /* Footer */
 
