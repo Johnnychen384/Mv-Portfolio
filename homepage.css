@@ -41,7 +41,7 @@ nav ul li a {
 }
 
 nav ul li:hover {
-    font-size: .85em;
+    transform: scale(1.1);
 }
 
 
@@ -96,7 +96,7 @@ main ul li {
 }
 
 main ul li:hover {
-    font-size: .85em;
+    transform: scale(1.1);
 }
 
 main ul li a {
@@ -119,7 +119,7 @@ main ul li a i:hover {
     }
 
     nav ul li:hover {
-        font-size: 1.1em;
+        transform: scale(1.1);
     }
 
     main h1 {
@@ -141,7 +141,7 @@ main ul li a i:hover {
     }
 
     main ul li:hover {
-        font-size: 2em;
+        transform: scale(1.1);
     }
 
 }
