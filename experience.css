@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+    z-index: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./ameer-basheer-gV6taBJuBTk-unsplash.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navs */
+
+nav {
+    padding: 1em;
+    height: 3%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+
+.selected-item a{
+    color: rgb(49, 104, 243);
+}
+
+nav ul li {
+    list-style-type: none;
+    font-size: .65em;
+    opacity: .8;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+main section:first-child {
+    margin-top: 1em;
+}
+
+main section:last-child {
+    margin-top: 5em;
+}
+
+main section h2 {
+    font-size: 1em;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-underline-offset: .4em;
+    margin-bottom: .6em;
+}
+
+main section div h3 {
+    font-size: .8em;
+    opacity: .9;
+    margin-bottom: .3em;
+}
+
+main section div .date {
+    font-size: .6em;
+    opacity: .9;
+    margin-bottom: 1em;
+}
+
+main section div p:last-child{
+    margin-bottom: 2.5em;
+    font-size: .6em;
+    opacity: .8;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    padding-bottom: 1em;
+    height: 3%;
+    background-color: 	#0e1111;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .8em;
+    gap: 1em;
+}
+
+footer ul li {
+    list-style-type: none;
+    font-size: .8em;
+    opacity: .7;
+}
+
+footer ul li:hover {
+    transform: scale(1.1);
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a i:hover {
+    color: rgb(49, 104, 243);
+}
