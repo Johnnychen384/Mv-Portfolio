@@ -58,13 +58,25 @@ main {
 
 main h1 {
     font-size: 1.4em;
-    opacity: .9;
+    opacity: 1;
+    animation: home1 3s ease-in;
+}
+
+@keyframes home1 {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 main p {
     font-size: .5em;
     opacity: .9;
     text-align: center;
+    animation: home2 6s ease-in;
+}
+
+@keyframes home2 {
+    from {opacity: 0;}
+    to {opacity: .9;}
 }
 
 main ul {
@@ -75,6 +87,12 @@ main ul {
 main ul li {
     list-style-type: none;
     font-size: .7em;
+    animation: home3 8s ease-in;
+}
+
+@keyframes home3 {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 main ul li:hover {
@@ -84,6 +102,10 @@ main ul li:hover {
 main ul li a {
     text-decoration: none;
     color: white;
+}
+
+main ul li a i:hover {
+    color: rgb(49, 104, 243);
 }
 
 /* Medias */
@@ -122,7 +144,4 @@ main ul li a {
         font-size: 2em;
     }
 
-    main ul li a i:hover {
-        color: rgb(49, 104, 243);
-    }
 }
