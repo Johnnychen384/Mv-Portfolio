@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+    z-index: 0;
+}
+
+body {
+    width: 100vw;
+    background-image: url("./ameer-basheer-gV6taBJuBTk-unsplash.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navs */
+
+nav {
+    padding: 1em;
+    height: 3%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+
+.selected-item a{
+    color: rgb(49, 104, 243);
+}
+
+nav ul li {
+    list-style-type: none;
+    font-size: .65em;
+    opacity: .8;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    width: 90%;
+    height: 100%;
+    margin: 1.2em auto 0 auto;
+    opacity: .8;
+}
+
+main form h1 {
+    font-size: 1em;
+    text-align: center;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+main form div i:first-child{
+    display: none;
+}
+
+main form div p {
+    font-size: .5em;
+    text-align: center;
+}
+
+main form div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+    gap: .5em;
+}
+
+main form div label {
+    color: white;
+    font-size: .8em;
+}
+
+main form div input {
+    padding: .7em 0;
+    font-size: .9em;
+    color: black;
+}
+
+main form div textarea {
+    padding: .7em .5em;
+    font-size: .9em;
+    color: black;
+}
+
+#send {
+    width: 50%;
+    color: black;
+    margin: 0 auto;
+    padding: .5em 0;
+    border-radius: .2em;
+    border: none;
+}
+
+
+/* Footer */
+
+footer {
+    padding-bottom: 1em;
+    height: 3%;
+    background-color: 	#0e1111;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .8em;
+    gap: 1em;
+}
+
+footer ul li {
+    list-style-type: none;
+    font-size: .8em;
+    opacity: .7;
+}
+
+footer ul li:hover {
+    transform: scale(1.1);
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a i:hover {
+    color: rgb(49, 104, 243);
+}
+
+
+/* Medias */
+@media only screen and (max-width: 1000px) {
+    body {
+        height: 100vh;
+    }
+}
