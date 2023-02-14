@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./ameer-basheer-gV6taBJuBTk-unsplash.jpg");
+    background-size: cover;
+}
+
+/* Navs */
+
+nav {
+    padding-top: 1em;
+    height: 3%;
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+
+.selected-item a{
+    color: rgb(49, 104, 243);
+}
+
+nav ul li {
+    list-style-type: none;
+    font-size: .65em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover {
+    font-size: .85em;
+}
+
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    margin: 10em auto;
+    width: 90%;
+}
+
+main h1 {
+    font-size: 1.4em;
+    opacity: .9;
+}
+
+main p {
+    font-size: .5em;
+    opacity: .9;
+    text-align: center;
+}
+
+main ul {
+    display: flex;
+    gap: 1em;
+}
+
+main ul li {
+    list-style-type: none;
+    font-size: .7em;
+}
+
+main ul li:hover {
+    font-size: .85em;
+}
+
+main ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Medias */
+@media only screen and (min-width: 768px) {
+    nav ul {
+        gap: 1.6em;
+    }
+
+    nav ul li {
+        font-size: .9em;
+    }
+
+    nav ul li:hover {
+        font-size: 1.1em;
+    }
+
+    main h1 {
+        font-size: 2.4em;
+    }
+
+    main p {
+        font-size: 1.5em;
+        opacity: .7;
+        margin-bottom: 1em;
+    }
+
+    main ul {
+        gap: 2.2em;
+    }
+
+    main ul li {
+        font-size: 1.7em;
+    }
+
+    main ul li:hover {
+        font-size: 2em;
+    }
+
+    main ul li a i:hover {
+        color: rgb(49, 104, 243);
+    }
+}
