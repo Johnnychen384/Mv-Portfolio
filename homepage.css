@@ -33,6 +33,7 @@ nav ul {
 nav ul li {
     list-style-type: none;
     font-size: .65em;
+    opacity: .8;
 }
 
 nav ul li a {
@@ -42,6 +43,7 @@ nav ul li a {
 
 nav ul li:hover {
     transform: scale(1.1);
+    opacity: 1;
 }
 
 
@@ -59,7 +61,7 @@ main {
 main h1 {
     font-size: 1.4em;
     opacity: 1;
-    animation: home1 3s ease-in;
+    animation: home1 2s ease-in;
 }
 
 @keyframes home1 {
@@ -71,7 +73,7 @@ main p {
     font-size: .5em;
     opacity: .9;
     text-align: center;
-    animation: home2 6s ease-in;
+    animation: home2 4s ease-in;
 }
 
 @keyframes home2 {
@@ -87,7 +89,8 @@ main ul {
 main ul li {
     list-style-type: none;
     font-size: .7em;
-    animation: home3 8s ease-in;
+    animation: home3 6s ease-in;
+    opacity: .8;
 }
 
 @keyframes home3 {
@@ -97,6 +100,7 @@ main ul li {
 
 main ul li:hover {
     transform: scale(1.1);
+    opacity: 1;
 }
 
 main ul li a {
