@@ -10,6 +10,12 @@ const typeWriter = () => {
     }
 }
 
+const showMain = () => {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("mainEl").style.display = "flex";
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(showMain, 2000);
     setTimeout(typeWriter, 2000);
 })
