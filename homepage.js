@@ -16,6 +16,6 @@ const showMain = () => {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(showMain, 2000);
+    setTimeout(showMain, 1000);
     setTimeout(typeWriter, 2000);
 })

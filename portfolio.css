@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+    z-index: 0;
+}
+
+body {
+    width: 100vw;
+    background-image: url("./ameer-basheer-gV6taBJuBTk-unsplash.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* Navs */
+
+nav {
+    padding: 1em;
+    height: 3%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+
+.selected-item a{
+    color: rgb(49, 104, 243);
+}
+
+nav ul li {
+    list-style-type: none;
+    font-size: .65em;
+    opacity: .8;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+main input {
+    width: 50%;
+    margin-top: 1.5em;
+    color: black;
+    padding: .3em .4em;
+}
+
+
+main ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    margin-left: 3em;
+    gap: 1em;
+}
+
+main ul li {
+    flex-basis: 40%;
+    list-style-type: none;
+}
+
+main ul li img {
+    width: 100%;
+}
+
+main ul li img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+main ul li p {
+    font-size: .5em;
+    text-align: center;
+}
+
+main ul li p:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+
+/* Footer */
+
+footer {
+    padding-bottom: 1em;
+    height: 3%;
+    background-color: 	#0e1111;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .8em;
+    gap: 1em;
+}
+
+footer ul li {
+    list-style-type: none;
+    font-size: .8em;
+    opacity: .7;
+}
+
+footer ul li:hover {
+    transform: scale(1.1);
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a i:hover {
+    color: rgb(49, 104, 243);
+}
+
+
+
+/* Media */
+
+
+@media only screen and (max-width: 1000px) {
+    body {
+        height: 100vh;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    body {
+        height: 100vh;
+    }
+}
