@@ -125,8 +125,8 @@ main section p {
     margin-bottom: .3em;
 }
 
-.contact-details a {
-    height: 50%;
+.contact-details div a {
+    height: 10%;
     background-color: #0e1111;
     border-radius: .5em;
     padding: .7em .8em;
@@ -134,7 +134,18 @@ main section p {
     align-self: flex-end;
     animation: 4s ease-out 0s 1 slideInLeft;
     text-decoration: none;
+    width: 100%;
+    text-align: center;
 }
+
+.contact-details div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
 
 .contact-details a i {
     padding-right: .6em;
