@@ -58,6 +58,56 @@ nav ul li:hover {
 }
 
 /* Main */
+
+/* =====Animation Stuff===== */
+@keyframes fadeIn {
+    100% {
+        opacity: .9;
+    }
+}
+
+main ul li {
+    animation: fadeIn .5s forwards;
+}
+
+main ul li:nth-child(1) {
+    animation-delay: 1s;
+}
+
+main ul li:nth-child(2) {
+    animation-delay: 1.5s;
+}
+
+main ul li:nth-child(3) {
+    animation-delay: 2s;
+}
+
+main ul li:nth-child(4) {
+    animation-delay: 2.5s;
+}
+
+main ul li:nth-child(5) {
+    animation-delay: 3s;
+}
+
+main ul li:nth-child(6) {
+    animation-delay: 3.5s;
+}
+
+main ul li:nth-child(7) {
+    animation-delay: 4s;
+}
+
+main ul li:nth-child(8) {
+    animation-delay: 4.5s;
+}
+
+main ul li:nth-child(9) {
+    animation-delay: 5s;
+} 
+
+
+
 main {
     display: flex;
     flex-direction: column;
@@ -71,6 +121,7 @@ main input {
     margin-top: 1.5em;
     color: black;
     padding: .3em .4em;
+    border-radius: .2em;
 }
 
 
@@ -86,15 +137,16 @@ main ul {
 main ul li {
     flex-basis: 40%;
     list-style-type: none;
+    opacity: 0;
+}
+
+main ul li:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 main ul li img {
     width: 100%;
-}
-
-main ul li img:hover {
-    cursor: pointer;
-    transform: scale(1.05);
 }
 
 main ul li p {
@@ -102,10 +154,6 @@ main ul li p {
     text-align: center;
 }
 
-main ul li p:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-}
 
 
 
@@ -190,8 +238,12 @@ footer ul li a i:hover {
 
 }
 
-
 @media only screen and (min-width: 1024px) {
+    main input {
+        padding: .5em .7em;
+        font-size: .9em;
+    }
+
     main ul {
         margin-left: 7em;
     }
@@ -227,10 +279,19 @@ footer ul li a i:hover {
 }
 
 
+/* Centering projects */
+
 @media only screen and (min-width: 1400px) {
+
+    main input {
+        padding: .6em 1em;
+        font-size: 1.2em;
+    }
+
     main ul {
         margin-left: 10.5em;
     }
+
 }
 
 @media only screen and (min-width: 1600px) {
@@ -251,7 +312,7 @@ footer ul li a i:hover {
     }
 }
 
-
+/* To allow the Footer to stick to bottom */
 
 @media only screen and (max-width: 1000px) {
     body {
