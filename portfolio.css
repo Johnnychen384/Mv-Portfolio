@@ -107,7 +107,6 @@ main ul li:nth-child(9) {
 } 
 
 
-
 main {
     display: flex;
     flex-direction: column;
@@ -145,12 +144,17 @@ main ul li:hover {
     transform: scale(1.05);
 }
 
-main ul li img {
-    width: 100%;
+main ul li a {
+    text-decoration: none;
 }
 
-main ul li p {
-    font-size: .5em;
+main ul li a img {
+    width: 100%;
+    border-radius: .2em;
+}
+
+main ul li a p {
+    font-size: .7em;
     text-align: center;
 }
 
